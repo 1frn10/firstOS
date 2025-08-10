@@ -1,7 +1,6 @@
 [bits 32]
+[extern bmain]
 
-mov byte [0xb8002], 'Y'
-
-jmp $
-
-times 1024 - ($-$$) db 0
+_start_kernel:
+	call bmain
+	jmp $

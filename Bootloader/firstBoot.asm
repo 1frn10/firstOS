@@ -49,8 +49,8 @@ start:
 	;mov ebp, 0x90000
 	;mov esp, ebp
 
-	mov byte [0xb8000], 'X'
-	mov byte [0xb8004], 'Z'
+	;mov byte [0xb8000], 'X'
+	;mov byte [0xb8004], 'Z'
 	jmp 0x1000
 	jmp $
 
